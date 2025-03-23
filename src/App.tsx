@@ -4,7 +4,6 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Suspense, lazy } from "react";
-import { ThemeProvider } from "./hooks/use-theme";
 import LoadingState from "./components/LoadingState";
 
 // Lazy load components for better performance
@@ -27,7 +26,6 @@ const queryClient = new QueryClient({
 // Wrap the App component in a function declaration to ensure React hooks work properly
 function App() {
   return (
-    <ThemeProvider defaultTheme="system">
       <QueryClientProvider client={queryClient}>
           <Toaster />
           <Sonner />
@@ -42,7 +40,6 @@ function App() {
             </Suspense>
           </BrowserRouter>
       </QueryClientProvider>
-    </ThemeProvider>
   );
 }
 

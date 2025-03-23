@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { ArrowLeft, Github, Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useTheme } from "@/hooks/use-theme";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -13,11 +12,7 @@ interface LayoutProps {
 }
 
 const Layout = ({ children, className, showBackButton = false, title }: LayoutProps) => {
-  const { theme, setTheme } = useTheme();
-  
-  const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  };
+
   
   return (
     <div className="min-h-screen bg-background flex flex-col">
@@ -44,18 +39,6 @@ const Layout = ({ children, className, showBackButton = false, title }: LayoutPr
           )}
           
           <div className="ml-auto flex items-center gap-4">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleTheme}
-              aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}
-            >
-              {theme === 'dark' ? (
-                <Sun className="h-[1.2rem] w-[1.2rem]" aria-hidden="true" />
-              ) : (
-                <Moon className="h-[1.2rem] w-[1.2rem]" aria-hidden="true" />
-              )}
-            </Button>
             
             <a
               href="https://github.com/godaddy"
