@@ -32,6 +32,12 @@ This project is built using modern web development technologies:
 - **React Query:** Handles efficient data fetching and caching.
 - **Lucid Icons:** Supplies a comprehensive set of icons.
 
+## LightHouse Score 
+![image](https://github.com/user-attachments/assets/f73ebb27-03ea-41c3-9f56-a42248d9d198)
+
+## Demo
+[Walkthrough[(https://www.loom.com/share/324d7c6926ba437786a929fa3ab08e62?sid=759fbd07-e61d-4305-9fa8-7ea3327f0b50)
+
 ## Installation
 
 Follow these steps to set up the project locally:
