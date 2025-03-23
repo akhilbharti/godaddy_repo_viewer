@@ -75,6 +75,9 @@ Pagination offers superior user control, clarity, accessibility, performance, an
 ## LightHouse Score 
 ![image](https://github.com/user-attachments/assets/f73ebb27-03ea-41c3-9f56-a42248d9d198)
 
+## Test Coverage
+![image](image.png)
+
 ## Demo
 [Walkthrough[(https://www.loom.com/share/324d7c6926ba437786a929fa3ab08e62?sid=759fbd07-e61d-4305-9fa8-7ea3327f0b50)
 
@@ -114,3 +117,4 @@ Follow these steps to set up the project locally:
 - If there should be more routes, we can lazy load them.
 - Make use of ui-kit for ShadCn added custom theme theme.
 - Any other unclear decisions can be discussed in a follow-up.
+
